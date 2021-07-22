@@ -1,6 +1,6 @@
 {
     "name": "sprnva/fortify",
-    "description": "The Authentication for Sprnva Framework.",
+    "description": "The Authentication Scaffolding for Sprnva Framework.",
     "keywords": [
         "framework",
         "sprnva",
