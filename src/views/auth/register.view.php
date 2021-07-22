@@ -18,7 +18,7 @@ use App\Core\App;
     <style>
         @font-face {
             font-family: Nunito;
-            src: url("<?= public_url('/assets/sprnva/fonts/Nunito-Regular.ttf') ?>");
+            src: url("<?= public_url('/assets/sprnva/fonts/Nunito-Bold.ttf') ?>");
         }
 
         body {
