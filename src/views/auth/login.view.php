@@ -77,12 +77,12 @@ use App\Core\Request;
 
         <div class="row justify-content-md-center">
             <div class="col-md-5">
-                <div class="card mt-2" style="background-color: #fff; border: 0px; border-radius: 8px; box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2);">
+                <div class="card mt-4" style="background-color: #fff; border: 0px; border-radius: 8px; box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2);">
                     <div class="card-body d-flex justify-content-center align-items-center">
 
-                        <small id="emailHelp" class="form-text text-muted mb-1">Return to</small>
+                        <small id="emailHelp" class="form-text text-muted mb-1">We'll never share your email with anyone else.</small>
 
-                        <a href="<?= route('/'); ?>" class="ml-2" style="font-size: 14px;">Welcome page</a>
+                        <a href="<?= route('/register'); ?>" class="ml-2" style="font-size: 14px;">Register</a>
 
                     </div>
                 </div>
