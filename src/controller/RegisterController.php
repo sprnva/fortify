@@ -22,7 +22,7 @@ class RegisterController
     {
         $request = Request::validate('/register', [
             'email' => ['required', 'email'],
-            'username' => ['required'],
+            'username' => ['required', 'unique:users'],
             'password' => ['required'],
         ]);
 
