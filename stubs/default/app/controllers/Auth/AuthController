@@ -15,7 +15,7 @@ class AuthController
         Auth::isAuthenticated();
 
         $pageTitle = "Login";
-        return packageView('fortify/src/views/auth/login', compact('pageTitle'));
+        return view('/auth/login', compact('pageTitle'));
     }
 
     public function store()
@@ -39,7 +39,7 @@ class AuthController
         Auth::isAuthenticated();
 
         $pageTitle = "Forgot Password";
-        return packageView('fortify/src/views/auth/forgot-password', compact('pageTitle'));
+        return view('/views/auth/forgot-password', compact('pageTitle'));
     }
 
     public function sendResetLink()
@@ -54,7 +54,7 @@ class AuthController
     public function resetPassword($token)
     {
         $pageTitle = "Reset Password";
-        return packageView('fortify/src/views/auth/password-reset', compact('pageTitle', 'token'));
+        return view('/views/auth/password-reset', compact('pageTitle', 'token'));
     }
 
     public function passwordStore()

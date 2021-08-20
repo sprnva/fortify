@@ -16,7 +16,7 @@ class ProfileController
         $user_id = Auth::user('id');
         $user_data = DB()->select("*", 'users', "id='$user_id'")->get();
 
-        return packageView('fortify/src/views/auth/profile', compact('user_data', 'pageTitle'));
+        return view('/views/auth/profile', compact('user_data', 'pageTitle'));
     }
 
     public function update()
