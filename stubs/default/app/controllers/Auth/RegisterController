@@ -15,7 +15,7 @@ class RegisterController
         Auth::isAuthenticated();
 
         $pageTitle = "Register";
-        return view('/views/auth/register', compact('pageTitle'));
+        return view('/auth/register', compact('pageTitle'));
     }
 
     public function store()

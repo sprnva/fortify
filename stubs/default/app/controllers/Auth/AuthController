@@ -39,7 +39,7 @@ class AuthController
         Auth::isAuthenticated();
 
         $pageTitle = "Forgot Password";
-        return view('/views/auth/forgot-password', compact('pageTitle'));
+        return view('/auth/forgot-password', compact('pageTitle'));
     }
 
     public function sendResetLink()
@@ -54,7 +54,7 @@ class AuthController
     public function resetPassword($token)
     {
         $pageTitle = "Reset Password";
-        return view('/views/auth/password-reset', compact('pageTitle', 'token'));
+        return view('/auth/password-reset', compact('pageTitle', 'token'));
     }
 
     public function passwordStore()
