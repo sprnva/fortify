@@ -1,4 +1,4 @@
-<?php require __DIR__ . '/head.php';
+<?php require __DIR__ . '/../layouts/head.php';
 
 use App\Core\Auth;
 ?>
@@ -109,4 +109,4 @@ use App\Core\Auth;
     </div>
 </div>
 
-<?php require __DIR__ . '/footer.php'; ?>
+<?php require __DIR__ . '/../layouts/footer.php'; ?>
