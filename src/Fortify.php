@@ -2,7 +2,7 @@
 
 namespace App\Core\Install;
 
-use App\Core\Filesystem;
+use App\Core\Filesystem\Filesystem;
 
 class Fortify
 {
