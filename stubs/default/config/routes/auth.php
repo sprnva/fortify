@@ -17,7 +17,7 @@ Route::group(['prefix' => 'register'], function () {
 
 Route::group(['prefix' => 'profile', 'middleware' => ['auth']], function () {
     Route::get("/", ['ProfileController@index']);
-    Route::post('/{user_id}', ['ProfileController@update']);
+    Route::post('/', ['ProfileController@update']);
     Route::post('/changepass', ['ProfileController@changePass']);
     Route::post('/delete/{user_id}', ['ProfileController@destroy']);
 });
