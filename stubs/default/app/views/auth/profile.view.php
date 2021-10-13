@@ -19,7 +19,7 @@ use App\Core\Auth;
                     <div class="col-12">
                         <div class="card" style="background-color: #fff; border: 0px; border-radius: 8px; box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2);">
                             <div class="card-body">
-                                <form method="POST" action="<?= route('/profile', Auth::user('id')) ?>">
+                                <form method="POST" action="<?= route('/profile') ?>">
                                     <?= csrf() ?>
                                     <div class="form-group">
                                         <label for="username">E-mail</label>
