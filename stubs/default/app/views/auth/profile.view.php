@@ -4,7 +4,7 @@ use App\Core\Auth;
 ?>
 <div class="row pb-3">
     <div class="col-12">
-        <?= alert_msg('danger'); ?>
+        <?= alert_msg(); ?>
     </div>
     <div class="col-12">
         <div class="row">
