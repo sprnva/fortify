@@ -1,6 +1,7 @@
 <?php require __DIR__ . '/../layouts/head.php';
 
 use App\Core\Auth;
+use App\Core\Storage;
 ?>
 <div class="row pb-3">
     <div class="col-12">
