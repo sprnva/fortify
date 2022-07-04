@@ -12,19 +12,27 @@ class AuthController
 
     public function index()
     {
+        // this will check if user is already authenticated
+        // redirect to home if authenticated
         Auth::isAuthenticated();
 
+        // if not authenticated
+        // show login page
         $pageTitle = "Login";
         return view('/auth/login', compact('pageTitle'));
     }
 
     public function store()
     {
+        // username = input type in login view
+        // password = input type in login view
         $request = Request::validate('/login', [
             'username' => ['required'],
             'password' => ['required']
         ]);
 
+        // Auth::authenticate is the function to check if the 
+        // fields requested is present in the users table
         Auth::authenticate($request);
     }
 
